@@ -1,0 +1,165 @@
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.top-tags {
+  bottom: auto;
+  top: 25px;
+}
+
+.tags {
+  color: #f5c20a;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 25px;
+  left: 200px;
+  font-size: 28px;
+  font-family: "Orbitron";
+}
+
+.bottom-tag-html {
+  margin-left: -40px;
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.about-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }
+
+  h1 {
+    font-size: 53px;
+    font-family: "Courgette";
+    color: #e2e8f0c4;
+    font-weight: 400;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    left: 150px;
+
+    &::before {
+      content: "<h1>";
+      font-family: "Orbitron";
+      font-size: 25px;
+      color: #f5c20a;
+      position: absolute;
+      margin-top: -20px;
+      left: -40px;
+      bottom: 65px;
+      opacity: 0.7;
+      line-height: 18px;
+    }
+
+    &::after {
+      content: "<h1 />";
+      font-family: "Orbitron";
+      font-size: 25px;
+      color: #f5c20a;
+      line-height: 18px;
+      position: absolute;
+      left: 255px;
+      bottom: -7px;
+      margin-left: 30px;
+      opacity: 0.7;
+    }
+  }
+
+  p {
+    font-size: 23px;
+    color: #00ff00;
+    font-family: "Courgette";
+    letter-spacing: 0.5px;
+    font-weight: 50;
+    text-align: justify;
+    min-width: fit-content;
+    animation: pulse 1s;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 1.2s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 1.3s;
+    }
+  }
+  .p2 {
+    // margin-left: 100px;
+    color: #e2e8f0c4;
+  }
+}
+
+.text-animate-hover {
+  &:hover {
+    color: #f5c20a;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page {
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.about-page {
+      h1 {
+        font-size: 33px;
+        margin-top: -25px;
+        margin-bottom: 5px;
+        left: 80px;
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .p2 {
+        margin-left: 5px;
+        color: #e2e8f0c4;
+      }
+      
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

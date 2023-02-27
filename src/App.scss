@@ -1,0 +1,54 @@
+$primary-color: #f5c20a;
+
+@import "animate.css";
+@import "~loaders.css/src/animations/pacman.scss";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("./assets/fonts/orbitron-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+input,
+textarea {
+  font-family: "Helvetica Neue";
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 70%;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 900px) {
+  .loader-active {
+    left: 20%;
+    bottom: 20%;
+  }
+}
