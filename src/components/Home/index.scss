@@ -47,7 +47,7 @@
 
   h2 {
     color: #00ff00;
-    margin: top 20px;
+    margin-top: 20px;
     font-weight: 500;
     font-size: 20px;
     font-family: "Orbitron";
@@ -102,9 +102,10 @@
     }
 
     h2 {
-      font-size: 14px;
+      font-size: 20px;
       font-family: "Orbitron";
-      letter-spacing: 0px;
+      letter-spacing: 3px;
+      margin: 30px 0 0 30px;
     }
 
     .flat-button {
