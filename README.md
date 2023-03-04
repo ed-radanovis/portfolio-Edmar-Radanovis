@@ -3,7 +3,7 @@
 <h2>Finished personal portfolio project</h2>
 <br>
 => Result of the finished project. The purpose here was to create a website where I present the collection of all my projects, finished or in progress.
-   It was a very fun APP to develop, where I realized the knowledge of various tools and perfected several soft skills.
+   It was a very fun APP to develop, where I realized the knowledge of various tools and perfected several hard skills.
    Highlight for animations and responsive layout.
 <br>
 <br>
